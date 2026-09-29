@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer Plans & Pricing | Sports Tournament Management</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/bluewake-logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <nav class="navbar-marine navbar navbar-expand-xl">
+        <div class="container-custom d-flex justify-content-between align-items-center w-100">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo" class="brand-logo me-2">
+                <span class="fs-4 fw-bold text-gradient">TOURNAPRO</span>
+            </a>
+
+            <button class="navbar-toggler border-0 text-white d-xl-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="home-2.html">Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link " href="book-now.html">Register Team</a></li>
+                    <li class="nav-item"><a class="nav-link " href="services.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link " href="gallery.html">Results & Fixtures</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3 ms-lg-4">
+                <button class="theme-toggle btn btn-link text-white p-0"><i class="bi bi-moon-stars fs-5"></i></button>
+                <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-end glass-panel" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img
+                    src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo" class="brand-logo offcanvas-brand-logo">
+                <span>TOURNAPRO</span>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100">
+            <ul class="navbar-nav mb-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Tournaments</a></li>
+                <li class="nav-item"><a class="nav-link" href="book-now.html">Register Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Results & Fixtures</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="small text-muted text-uppercase tracking-widest"></span>
+                    <div class="d-flex gap-3">
+                        <button class="theme-toggle btn btn-link text-white p-0"><i
+                                class="bi bi-moon-stars fs-5"></i></button>
+                        <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section text-center overflow-hidden" style="min-height: 60vh;">
+        <img src="assets/images/sports_hero.jpg" alt="Tournament Pricing"
+            class="hero-video-bg">
+        <div class="hero-overlay"></div>
+        <div class="container-custom z-1 reveal">
+            <h1 class="display-3 fw-bold text-white mb-4">Choose Your <span class="text-accent">Tournament Plan.</span></h1>
+            <p class="lead text-white-50 mb-5 mx-auto col-lg-6">Transparent pricing for schools, clubs, regional championships, and collegiate leagues.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+                <a href="#packages" class="btn-marine rounded-pill">Compare Plans</a>
+                <a href="book-now.html" class="btn btn-outline-light rounded-pill">Create Tournament</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="section-padding bg-deep">
+        <div class="container-custom">
+            <div class="row g-4">
+                <!-- Club Plan -->
+                <div class="col-lg-4">
+                    <div class="glass-panel p-5 text-center h-100 hover-tilt">
+                        <h5 class="text-muted small mb-4 uppercase font-monospace">Club & Weekend Cup</h5>
+                        <h2 class="display-3 fw-bold mb-4">$49</h2>
+                        <ul class="list-unstyled mb-5 opacity-75">
+                            <li class="mb-3">Up to 16 Teams</li>
+                            <li class="mb-3">Automated Fixtures & Brackets</li>
+                            <li class="mb-3">Live Mobile Scorekeeper</li>
+                            <li class="mb-3">Automated Points Table</li>
+                        </ul>
+                        <a href="book-now.html" class="btn btn-outline-light w-100 rounded-pill py-3">Get Started</a>
+                    </div>
+                </div>
+                <!-- Pro Championship -->
+                <div class="col-lg-4">
+                    <div class="glass-panel p-5 text-center h-100 hover-tilt border-accent">
+                        <h5 class="text-accent small mb-4 uppercase font-monospace">Pro Championship</h5>
+                        <h2 class="display-3 fw-bold mb-4">$129</h2>
+                        <ul class="list-unstyled mb-5 opacity-75">
+                            <li class="mb-3">Up to 64 Teams</li>
+                            <li class="mb-3">Multi-Division Group Stages</li>
+                            <li class="mb-3">Referee Scoring Portal</li>
+                            <li class="mb-3">Player Stats & Award Rankings</li>
+                        </ul>
+                        <a href="book-now.html" class="btn btn-accent w-100 rounded-pill py-3">Launch Tournament</a>
+                    </div>
+                </div>
+                <!-- Enterprise -->
+                <div class="col-lg-4">
+                    <div class="glass-panel p-5 text-center h-100 hover-tilt">
+                        <h5 class="text-muted small mb-4 uppercase font-monospace">Enterprise League</h5>
+                        <h2 class="display-3 fw-bold mb-4">$299</h2>
+                        <ul class="list-unstyled mb-5 opacity-75">
+                            <li class="mb-3">Unlimited Teams & Divisions</li>
+                            <li class="mb-3">Multi-Sport Support</li>
+                            <li class="mb-3">Custom Tournament Branding</li>
+                            <li class="mb-3">Priority Coordinator Support</li>
+                        </ul>
+                        <a href="book-now.html" class="btn btn-outline-light w-100 rounded-pill py-3">Request Enterprise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

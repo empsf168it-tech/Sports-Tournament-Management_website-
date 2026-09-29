@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments & Results | Sports Tournament Management</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/bluewake-logo.svg">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .trophy-room-section .trophy-room-card {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            aspect-ratio: 4 / 5;
+            border: 1px solid var(--glass-border);
+            background: #030a12;
+        }
+
+        .trophy-room-section .trophy-room-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.45s ease;
+        }
+
+        .trophy-room-section .trophy-room-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .trophy-room-section .trophy-room-overlay {
+            position: absolute;
+            inset: auto 0 0 0;
+            padding: 1.25rem 1.3rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+        }
+
+        .trophy-room-section .trophy-room-caption {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <nav class="navbar-marine navbar navbar-expand-xl">
+        <div class="container-custom d-flex justify-content-between align-items-center w-100">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo" class="brand-logo me-2">
+                <span class="fs-4 fw-bold text-gradient">TOURNAPRO</span>
+            </a>
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="home-2.html">Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link " href="book-now.html">Register Team</a></li>
+                    <li class="nav-item"><a class="nav-link " href="services.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Results & Fixtures</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="d-none d-xl-flex align-items-center gap-3 ms-lg-4">
+                <button class="theme-toggle btn btn-link text-white p-0"><i class="bi bi-moon-stars fs-5"></i></button>
+                <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-end glass-panel" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img
+                    src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo" class="brand-logo offcanvas-brand-logo">
+                <span>TOURNAPRO</span>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100">
+            <ul class="navbar-nav mb-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Tournaments</a></li>
+                <li class="nav-item"><a class="nav-link" href="book-now.html">Register Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Features</a></li>
+                <li class="nav-item"><a class="nav-link active" href="gallery.html">Results & Fixtures</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="small text-muted text-uppercase tracking-widest"></span>
+                    <div class="d-flex gap-3">
+                        <button class="theme-toggle btn btn-link text-white p-0"><i
+                                class="bi bi-moon-stars fs-5"></i></button>
+                        <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section text-center overflow-hidden">
+        <img src="assets/images/sports_hero.jpg"
+            alt="Sports Tournament Highlights" class="hero-video-bg">
+        <div class="hero-overlay"></div>
+        <div class="container-custom z-1">
+            <h1 class="display-1 fw-bold text-white mb-4">Tournaments & <span class='text-accent'>Results.</span></h1>
+            <p class="lead text-white-50 mb-5 mx-auto col-lg-6">Live match scores, completed tournament archives, championship brackets, and player leaderboards.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 reveal reveal-up delay-2 mt-5">
+                <a href="book-now.html" class="btn-marine rounded-pill">Register Team</a>
+                <a href="services.html"
+                    class="btn btn-outline-light rounded-pill d-flex align-items-center gap-2 gallery-watch-story-btn">
+                    <i class="bi bi-trophy fs-4"></i> View Features
+                </a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 reveal reveal-up delay-3 opacity-75">
+                <div class="text-center">
+                    <i class="bi bi-broadcast text-accent fs-4"></i>
+                    <div class="small text-white mt-1 uppercase font-monospace">LIVE SCORES</div>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-geo-alt-fill text-accent fs-4"></i>
+                    <div class="small text-white mt-1 uppercase font-monospace">6+ SPORTS DISCIPLINES</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section 1: Championship Fixtures -->
+    <section class="section-padding bg-tech border-bottom border-white border-opacity-5 reveal">
+        <div class="container-custom">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h5 class="text-accent font-monospace mb-3">MATCH SCORECARDS</h5>
+                    <h2 class="display-3 text-white mb-4">Championship <span class="text-accent">Fixtures.</span></h2>
+                    <p class="lead text-white-50 mb-5">Our results portal is more than just scores; it is an official record of athletic excellence. Every match scorecard is verified by certified match commissioners and referee crews.
+                    </p>
+                    <div class="glass-panel p-4 d-inline-block border-accent">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-shield-check fs-2 text-accent"></i>
+                            <div>
+                                <h6 class="mb-0 text-white">Verified Match Sheets</h6>
+                                <small class="text-white-50">Officiated by Accredited Referees</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="hover-tilt">
+                                <div class="glass-panel p-2 h-100 border-accent border-opacity-50">
+                                    <img src="assets/images/football_match.jpg"
+                                        class="img-fluid rounded-4 w-100" style="object-fit:cover; height: 450px;" alt="Championship Match">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="hover-tilt">
+                                        <div class="glass-panel p-2 border-white border-opacity-10 text-center">
+                                            <img src="assets/images/cricket_match.jpg"
+                                                class="img-fluid rounded-4 w-100"
+                                                style="object-fit:cover; height: 180px;" alt="Cricket Match">
+                                            <h6 class="mt-3 mb-2 text-accent">T20 Super League</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="hover-tilt">
+                                        <div class="glass-panel p-2 border-white border-opacity-10">
+                                            <img src="assets/images/basketball_action.jpg"
+                                                class="img-fluid rounded-4 w-100"
+                                                style="object-fit:cover; height: 180px;" alt="Basketball Match">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="hover-tilt">
+                                        <div class="glass-panel p-2 border-white border-opacity-10">
+                                            <img src="assets/images/badminton_smash.jpg"
+                                                class="img-fluid rounded-4 w-100"
+                                                style="object-fit:cover; height: 180px;" alt="Badminton Finals">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Coordination -->
+    <section class="section-padding parallax-bg"
+        style="background-image: url('assets/images/stadium_arena.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container-custom z-1">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h5 class="text-accent mb-3 font-monospace">VENUE OPERATIONS</h5>
+                    <h2 class="display-3 mb-4 text-white">Stadium & Ground <span class="text-accent">Coordination.</span></h2>
+                    <p class="lead mb-5 opacity-75">Multi-ground allocations, floodlit tournament schedules, and real-time pitch availability across premier sports complexes.</p>
+                    <div class="glass-panel p-4 d-inline-block border-accent">
+                        <span class="fs-4 font-monospace gallery-coords-label">CHENNAI STADIUM COMPLEX | PITCH 1 - 8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Match Standards -->
+    <section class="section-padding bg-deep overflow-hidden">
+        <div class="container-custom">
+            <div class="text-center mb-5">
+                <h5 class="text-accent font-monospace mb-3">COMPLIANCE AUDIT</h5>
+                <h2 class="display-3">Official <span class="text-accent">Regulations.</span></h2>
+                <p class="text-muted mt-3 mx-auto" style="max-width: 600px;">Every tournament fixture adheres to national sporting federation rules and electronic time-keeping.</p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <!-- Data Point 1 -->
+                <div class="col-lg-4">
+                    <div
+                        class="glass-panel p-5 h-100 d-flex flex-column justify-content-between hover-tilt border-accent">
+                        <div>
+                            <i class="bi bi-book-half display-4 text-accent mb-4 d-block"></i>
+                            <h4>Standardized Rulebooks</h4>
+                            <p class="text-muted mt-3">FIFA, ICC, FIBA, and BWF compliant match rule templates pre-configured for instant bracket creation. Match durations, overtime protocols, penalty procedures, and disciplinary limits are enforced systematically across all division fixtures.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-top border-secondary">
+                            <span class="small text-accent fw-bold text-uppercase">Standard: OFFICIAL FEDERATION BYLAWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Central Focus Image -->
+                <div class="col-lg-4">
+                    <div class="position-relative h-100 rounded-5 overflow-hidden shadow-lg border border-white p-1">
+                        <img src="assets/images/soccer_ball.jpg"
+                            class="img-fluid w-100 h-100 rounded-5" style="object-fit: cover;" alt="Championship Match Ball">
+                        <div class="hero-overlay"></div>
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 text-center">
+                            <h5 class="text-white mb-0 uppercase tracking-widest">Official Match Ball Standards</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Point 2 -->
+                <div class="col-lg-4">
+                    <div class="glass-panel p-5 h-100 d-flex flex-column justify-content-between hover-tilt">
+                        <div>
+                            <i class="bi bi-shield-check display-4 text-accent mb-4 d-block"></i>
+                            <h4>Player Identity Verification</h4>
+                            <p class="text-muted mt-3">Digital check-ins prevent ineligible ringers and duplicate registrations. QR-code player badges are scanned by table referees prior to every kickoff, ensuring full transparency, fair-play ranking points, and verified statistics.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-top border-secondary">
+                            <span class="small text-accent fw-bold text-uppercase">Status: VERIFIED_ROSTER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Trophy Room -->
+    <section class="py-5 bg-card trophy-room-section">
+        <div class="container-custom py-5 reveal">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5">
+                <div class="text-start">
+                    <h2 class="mb-2">Trophy <span class="text-accent">Room.</span></h2>
+                    <p class="text-muted mb-0">Recent champions, tournament MVPs, and golden trophy winners.</p>
+                </div>
+                <span class="badge rounded-pill bg-accent text-dark px-3 py-2">Hall of Champions</span>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="assets/images/football_match.jpg"
+                            alt="Chennai Champions Cup Football Winners">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">Chennai Champions Cup • FC Marina Champions</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="assets/images/cricket_stadium.jpg"
+                            alt="Tamil Nadu Cricket Championship Winners">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">TN Cricket Cup • Kovai Kings Trophy</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="assets/images/basketball_action.jpg"
+                            alt="City Basketball League Champions">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">City Basketball • Metro Dunkers Gold</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="assets/images/badminton_smash.jpg"
+                            alt="State Badminton Open Winners">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">State Badminton • Smash Masters</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="py-5 text-center mt-5 mb-5 reveal">
+        <h4 class="text-muted">Follow our daily tournament updates & live scorecards</h4>
+        <a href="#" class="btn btn-outline-light rounded-pill px-5 mt-3"><i
+                class="bi bi-instagram me-2 text-accent"></i>@tournament_pro</a>
+    </section>
+
+    <footer>
+        <div class="container-custom">
+            <div class="row">
+                <div class="col-lg-4 mb-5 reveal reveal-up">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center mb-4 text-decoration-none">
+                        <img src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo"
+                            class="brand-logo footer-brand-logo me-2">
+                        <span class="fs-4 fw-bold text-gradient brand-wordmark">TOURNAPRO</span>
+                    </a>
+                    <p class="text-muted pe-lg-5">Smart tools for organizing tournaments, teams, matches, schedules, scores, and results across all major sports disciplines.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-1">
+                    <h5 class="mb-4">Tournaments</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home-2.html" class="text-muted text-decoration-none">Upcoming Tournaments</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Live Fixtures</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none">Points Tables</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Results Archive</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-2">
+                    <h5 class="mb-4">Platform</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-muted text-decoration-none">Our Story</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none">Sports Categories</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Organizer Support</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">Tournament FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4 reveal reveal-up delay-3">
+                    <h5 class="mb-4">Tournament Alerts</h5>
+                    <div class="glass-panel p-2 d-flex">
+                        <input type="email" class="form-control bg-transparent border-0 text-white"
+                            placeholder="Email Address">
+                        <button class="btn btn-accent rounded-pill px-4">Subscribe</button>
+                    </div>
+                    <small class="text-muted mt-3 d-block">Get instant alerts for new tournament registrations and fixture releases.</small>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">© 2026 Sports Tournament Management. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" width="30">
+                    <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" width="30" class="ms-2">
+                    <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" width="30" class="ms-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

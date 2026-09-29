@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="Sports Tournament Management logo">
+  <defs>
+    <linearGradient id="tournamentGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+    <linearGradient id="sportsBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="actionGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Shield/Badge -->
+  <rect x="4" y="4" width="64" height="64" rx="16" fill="#0F172A" stroke="#2563EB" stroke-width="2.5"/>
+  
+  <!-- Trophy Cup Shape -->
+  <!-- Cup Base -->
+  <path d="M26 54h20v3H26z" fill="url(#tournamentGold)"/>
+  <path d="M32 46h8v8h-8z" fill="url(#tournamentGold)"/>
+  
+  <!-- Cup Body -->
+  <path d="M22 20h28v14c0 7.732-6.268 14-14 14s-14-6.268-14-14V20z" fill="url(#tournamentGold)"/>
+  
+  <!-- Handles -->
+  <path d="M22 24H16c-2.209 0-4 1.791-4 4v4c0 3.314 2.686 6 6 6h4" fill="none" stroke="url(#tournamentGold)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 24h6c2.209 0 4 1.791 4 4v4c0 3.314-2.686 6-6 6h-4" fill="none" stroke="url(#tournamentGold)" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Champion Star / Victory Accent -->
+  <path d="M36 24l2 4 4.5.5-3.3 3.1.9 4.4-4.1-2.2-4.1 2.2.9-4.4-3.3-3.1 4.5-.5z" fill="#0F172A"/>
+  
+  <!-- Dynamic Sports Ring / Slash -->
+  <path d="M12 56c8 4 18 5 28 2 8-2.4 16-7.6 20-13" fill="none" stroke="url(#actionGreen)" stroke-linecap="round" stroke-width="3"/>
+</svg>

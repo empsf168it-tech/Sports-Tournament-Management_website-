@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features & Services | Sports Tournament Management</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/bluewake-logo.svg">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <nav class="navbar-marine navbar navbar-expand-xl">
+        <div class="container-custom d-flex justify-content-between align-items-center w-100">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo" class="brand-logo me-2">
+                <span class="fs-4 fw-bold text-gradient">TOURNAPRO</span>
+            </a>
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="home-2.html">Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link " href="book-now.html">Register Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link " href="gallery.html">Results & Fixtures</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="d-none d-xl-flex align-items-center gap-3 ms-lg-4">
+                <button class="theme-toggle btn btn-link text-white p-0"><i class="bi bi-moon-stars fs-5"></i></button>
+                <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-end glass-panel" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img
+                    src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo" class="brand-logo offcanvas-brand-logo">
+                <span>TOURNAPRO</span>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100">
+            <ul class="navbar-nav mb-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Tournaments</a></li>
+                <li class="nav-item"><a class="nav-link" href="book-now.html">Register Team</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Results & Fixtures</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="small text-muted text-uppercase tracking-widest"></span>
+                    <div class="d-flex gap-3">
+                        <button class="theme-toggle btn btn-link text-white p-0"><i
+                                class="bi bi-moon-stars fs-5"></i></button>
+                        <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section services-hero text-center overflow-hidden">
+        <img src="assets/images/sports_hero.jpg" alt="Sports Management Platform" class="hero-video-bg">
+        <div class="hero-overlay"></div>
+        <div class="container-custom z-1">
+            <h1 class="display-1 fw-bold text-white mb-4">Tournament <span class='text-accent'>Features.</span></h1>
+            <p class="lead text-white-50 mb-5 mx-auto col-lg-6">Designed for sports organizers, league directors, referees, and athletes. Everything you need to run championships flawlessly.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 reveal reveal-up delay-2 mt-5">
+                <a href="book-now.html" class="btn-marine rounded-pill services-hero-cta">Create a Tournament</a>
+                <a href="gallery.html"
+                    class="btn btn-outline-light rounded-pill d-flex align-items-center gap-2 services-hero-cta-alt">
+                    <i class="bi bi-trophy fs-4"></i> View Results
+                </a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 reveal reveal-up delay-3 opacity-75">
+                <div class="text-center">
+                    <i class="bi bi-broadcast text-accent fs-4"></i>
+                    <div class="small text-white mt-1 uppercase font-monospace">REAL-TIME SCORING</div>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-shield-check text-accent fs-4"></i>
+                    <div class="small text-white mt-1 uppercase font-monospace">100% AUTOMATED</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 1: Team & Player Management -->
+    <section class="section-padding overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="assets/images/team_registration.jpg"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Team & Player Management">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="ps-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">01 / REGISTRATION & ROSTERS</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Team & Player Registration</h2>
+                        <p class="lead text-muted mb-4">Streamline tournament entries with online registration forms, customizable entry fees, digital player ID verification, and squad size controls with zero paperwork.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">UNLIMITED</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Team Capacity</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">DIGITAL</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Player ID Badges</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Register Your Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2: Fixture Scheduling -->
+    <section class="section-padding bg-card overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="assets/images/fixture_schedule.jpg"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Fixture Scheduling">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="pe-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">02 / FIXTURES & BRACKETS</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Automated Fixture Scheduling</h2>
+                        <p class="lead text-muted mb-4">Generate round-robin, knockout, and group-stage tournament brackets with smart venue and court time-slot allocation to prevent double bookings.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">INSTANT</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Bracket Generator</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">CLASH-FREE</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Pitch Allocations</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Schedule Fixtures</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Live Scores & Match Tracking -->
+    <section class="section-padding overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="assets/images/match_tracking.jpg"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Live Score Tracking">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="ps-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">03 / LIVE MATCH TRACKING</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Live Scores & Match Tracking</h2>
+                        <p class="lead text-muted mb-4">Equip referees and table officials with an intuitive mobile scoring console. Track goals, points, wickets, fouls, substitutions, and penalties with live instantaneous updates for fans and spectators.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">LIVE SYNC</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Scorekeeper App</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">OFFICIAL</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Match Reports</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Explore Match Scoring</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 4: Points Table & Standings Management -->
+    <section class="section-padding bg-card overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="assets/images/points_standings.jpg"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Points Table & Standings">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="pe-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">04 / POINTS & LEADERBOARDS</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Points Table & Standings</h2>
+                        <p class="lead text-muted mb-4">Automate league standings with customizable win/draw/loss points, goal differences, net run rate (NRR) calculators, and head-to-head tie-breaker rules.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">AUTO-SYNC</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Standings Engine</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">PDF & CSV</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Exportable Reports</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Start Organizing Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Core Modules -->
+    <section class="py-5 mt-5 services-hardware-section">
+        <div class="container-custom reveal">
+            <h2 class="text-center mb-5">Core <span class="text-accent">Modules.</span></h2>
+            <div class="scrolling-wrapper py-4">
+                <div class="scrolling-card glass-panel p-4 text-center hover-tilt border-accent">
+                    <i class="bi bi-stopwatch text-accent fs-1"></i>
+                    <h5 class="mt-3">Referee Scoring Console</h5>
+                </div>
+                <div class="scrolling-card glass-panel p-4 text-center hover-tilt">
+                    <i class="bi bi-table text-accent fs-1"></i>
+                    <h5 class="mt-3">Automated Points Table</h5>
+                </div>
+                <div class="scrolling-card glass-panel p-4 text-center hover-tilt">
+                    <i class="bi bi-person-badge text-accent fs-1"></i>
+                    <h5 class="mt-3">Digital Player ID Badges</h5>
+                </div>
+                <div class="scrolling-card glass-panel p-4 text-center hover-tilt">
+                    <i class="bi bi-trophy text-accent fs-1"></i>
+                    <h5 class="mt-3">Trophy & Award Manager</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Organizer Quote -->
+    <section class="py-5 text-center mt-5 mb-5 reveal glass-panel mx-auto p-5 services-quote-section"
+        style="max-width:900px;">
+        <h3 class="mb-4">"Managing fixtures, team registrations, and live scores became effortlessly smooth with this platform."</h3>
+        <p class="text-muted">— Rajesh Kumar, South India Football League Organizer</p>
+    </section>
+
+    <footer>
+        <div class="container-custom">
+            <div class="row">
+                <div class="col-lg-4 mb-5 reveal reveal-up">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center mb-4 text-decoration-none">
+                        <img src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo"
+                            class="brand-logo footer-brand-logo me-2">
+                        <span class="fs-4 fw-bold text-gradient brand-wordmark">TOURNAPRO</span>
+                    </a>
+                    <p class="text-muted pe-lg-5">Smart tools for organizing tournaments, teams, matches, schedules, scores, and results across all major sports disciplines.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-1">
+                    <h5 class="mb-4">Tournaments</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home-2.html" class="text-muted text-decoration-none">Upcoming Tournaments</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Live Fixtures</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none">Points Tables</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Results Archive</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-2">
+                    <h5 class="mb-4">Platform</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-muted text-decoration-none">Our Story</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none">Sports Categories</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Organizer Support</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">Tournament FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4 reveal reveal-up delay-3">
+                    <h5 class="mb-4">Tournament Alerts</h5>
+                    <div class="glass-panel p-2 d-flex">
+                        <input type="email" class="form-control bg-transparent border-0 text-white"
+                            placeholder="Email Address">
+                        <button class="btn btn-accent rounded-pill px-4">Subscribe</button>
+                    </div>
+                    <small class="text-muted mt-3 d-block">Get instant alerts for new tournament registrations and fixture releases.</small>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">© 2026 Sports Tournament Management. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" width="30">
+                    <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" width="30" class="ms-2">
+                    <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" width="30" class="ms-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
