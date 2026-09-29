@@ -38,17 +38,22 @@
         .trophy-room-section .trophy-room-overlay {
             position: absolute;
             inset: auto 0 0 0;
-            padding: 1.25rem 1.3rem;
-            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+            padding: 1.5rem 1.25rem 1.25rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.75) 40%, rgba(0, 0, 0, 0.96) 100%) !important;
+            z-index: 2;
         }
 
-        .trophy-room-section .trophy-room-caption {
-            color: #fff;
-            font-weight: 500;
-            letter-spacing: 0.02em;
+        .trophy-room-section .trophy-room-card .trophy-room-overlay .trophy-room-caption,
+        .trophy-room-section .trophy-room-card .trophy-room-caption,
+        .trophy-room-section .trophy-room-caption,
+        .trophy-room-caption {
+            color: #ffffff !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.03em;
             text-transform: uppercase;
-            font-size: 0.82rem;
+            font-size: 0.85rem;
             margin: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.9) !important;
         }
     </style>
 </head>
@@ -120,7 +125,7 @@
     </div>
 
     <section class="hero-section text-center overflow-hidden">
-        <img src="assets/images/sports_hero.jpg"
+        <img src="assets/images/hero_sports_trophy.jpg"
             alt="Sports Tournament Highlights" class="hero-video-bg">
         <div class="hero-overlay"></div>
         <div class="container-custom z-1">
@@ -302,7 +307,7 @@
                         <img src="assets/images/football_match.jpg"
                             alt="Chennai Champions Cup Football Winners">
                         <div class="trophy-room-overlay">
-                            <p class="trophy-room-caption">Chennai Champions Cup • FC Marina Champions</p>
+                            <p class="trophy-room-caption text-white" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.9) !important; font-weight: 700 !important;">Chennai Champions Cup • FC Marina Champions</p>
                         </div>
                     </article>
                 </div>
@@ -311,7 +316,7 @@
                         <img src="assets/images/cricket_stadium.jpg"
                             alt="Tamil Nadu Cricket Championship Winners">
                         <div class="trophy-room-overlay">
-                            <p class="trophy-room-caption">TN Cricket Cup • Kovai Kings Trophy</p>
+                            <p class="trophy-room-caption text-white" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.9) !important; font-weight: 700 !important;">TN Cricket Cup • Kovai Kings Trophy</p>
                         </div>
                     </article>
                 </div>
@@ -320,7 +325,7 @@
                         <img src="assets/images/basketball_action.jpg"
                             alt="City Basketball League Champions">
                         <div class="trophy-room-overlay">
-                            <p class="trophy-room-caption">City Basketball • Metro Dunkers Gold</p>
+                            <p class="trophy-room-caption text-white" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.9) !important; font-weight: 700 !important;">City Basketball • Metro Dunkers Gold</p>
                         </div>
                     </article>
                 </div>
@@ -329,7 +334,7 @@
                         <img src="assets/images/badminton_smash.jpg"
                             alt="State Badminton Open Winners">
                         <div class="trophy-room-overlay">
-                            <p class="trophy-room-caption">State Badminton • Smash Masters</p>
+                            <p class="trophy-room-caption text-white" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.9) !important; font-weight: 700 !important;">State Badminton • Smash Masters</p>
                         </div>
                     </article>
                 </div>
@@ -347,7 +352,7 @@
     <footer>
         <div class="container-custom">
             <div class="row">
-                <div class="col-lg-4 mb-5 reveal reveal-up">
+                <div class="col-lg-4 col-md-12 mb-4 reveal reveal-up">
                     <a href="index.html" class="navbar-brand d-flex align-items-center mb-4 text-decoration-none">
                         <img src="assets/images/bluewake-logo.svg" alt="Sports Tournament Management logo"
                             class="brand-logo footer-brand-logo me-2">
@@ -360,7 +365,7 @@
                         <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-1">
+                <div class="col-lg-2 col-md-3 col-6 mb-4 reveal reveal-up delay-1">
                     <h5 class="mb-4">Tournaments</h5>
                     <ul class="list-unstyled">
                         <li><a href="home-2.html" class="text-muted text-decoration-none">Upcoming Tournaments</a></li>
@@ -369,7 +374,7 @@
                         <li><a href="gallery.html" class="text-muted text-decoration-none">Results Archive</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-2">
+                <div class="col-lg-2 col-md-3 col-6 mb-4 reveal reveal-up delay-2">
                     <h5 class="mb-4">Platform</h5>
                     <ul class="list-unstyled">
                         <li><a href="about.html" class="text-muted text-decoration-none">Our Story</a></li>
@@ -378,7 +383,7 @@
                         <li><a href="about.html" class="text-muted text-decoration-none">Tournament FAQ</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4 mb-4 reveal reveal-up delay-3">
+                <div class="col-lg-4 col-md-6 col-12 mb-4 reveal reveal-up delay-3">
                     <h5 class="mb-4">Tournament Alerts</h5>
                     <div class="glass-panel p-2 d-flex">
                         <input type="email" class="form-control bg-transparent border-0 text-white"

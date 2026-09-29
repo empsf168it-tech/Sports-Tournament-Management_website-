@@ -63,12 +63,111 @@
     color: var(--bg-deep);
 }
 
-[data-theme="light"] .form-control {
-    color: var(--text-main) !important;
+.form-control,
+.form-select,
+input.form-control,
+textarea.form-control {
+    color: #ffffff !important;
 }
 
-[data-theme="light"] .form-control::placeholder {
-    color: var(--text-muted);
+.form-control::placeholder,
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.form-control::-webkit-input-placeholder,
+input.form-control::-webkit-input-placeholder,
+textarea.form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.form-control::-moz-placeholder,
+input.form-control::-moz-placeholder,
+textarea.form-control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.form-control:-ms-input-placeholder,
+input.form-control:-ms-input-placeholder,
+textarea.form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+input.form-control:focus,
+textarea.form-control:focus {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 0.25rem rgba(34, 197, 94, 0.25) !important;
+}
+
+select.form-control option,
+select.form-select option {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+input[type="date"].form-control {
+    color-scheme: dark;
+}
+
+[data-theme="light"] .form-control,
+[data-theme="light"] .form-select,
+[data-theme="light"] input.form-control,
+[data-theme="light"] textarea.form-control {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .form-control::placeholder,
+[data-theme="light"] input.form-control::placeholder,
+[data-theme="light"] textarea.form-control::placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+[data-theme="light"] .form-control::-webkit-input-placeholder,
+[data-theme="light"] input.form-control::-webkit-input-placeholder,
+[data-theme="light"] textarea.form-control::-webkit-input-placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+[data-theme="light"] .form-control::-moz-placeholder,
+[data-theme="light"] input.form-control::-moz-placeholder,
+[data-theme="light"] textarea.form-control::-moz-placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+[data-theme="light"] .form-control:-ms-input-placeholder,
+[data-theme="light"] input.form-control:-ms-input-placeholder,
+[data-theme="light"] textarea.form-control:-ms-input-placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
+
+[data-theme="light"] .form-control:focus,
+[data-theme="light"] .form-select:focus,
+[data-theme="light"] input.form-control:focus,
+[data-theme="light"] textarea.form-control:focus {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] select.form-control option,
+[data-theme="light"] select.form-select option {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+[data-theme="light"] input[type="date"].form-control {
+    color-scheme: light;
 }
 
 [data-theme="light"] .btn-close-white {
@@ -471,8 +570,8 @@ div.fw-bold.small {
 }
 
 [data-theme="light"] .hero-video-bg {
-    filter: grayscale(20%) contrast(105%);
-    opacity: 0.22;
+    filter: brightness(0.92) contrast(105%);
+    opacity: 0.85;
 }
 
 .hero-overlay {
@@ -486,7 +585,7 @@ div.fw-bold.small {
 }
 
 [data-theme="light"] .hero-overlay {
-    background: linear-gradient(180deg, rgba(248, 250, 252, 0.7) 0%, rgba(248, 250, 252, 0.95) 100%) !important;
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0.35) 0%, rgba(248, 250, 252, 0.72) 100%) !important;
 }
 
 .hero-content {
@@ -779,7 +878,7 @@ footer .list-unstyled a.text-muted:focus-visible {
 }
 
 [data-theme="light"] .parallax-bg::before {
-    background: linear-gradient(to bottom, rgba(248, 250, 252, 0.88), rgba(241, 245, 249, 0.94)) !important;
+    background: linear-gradient(to bottom, rgba(248, 250, 252, 0.45), rgba(241, 245, 249, 0.68)) !important;
 }
 
 [data-theme="light"] .parallax-bg h1,
@@ -958,6 +1057,10 @@ footer .list-unstyled a.text-muted:focus-visible {
 
 .w-fit {
     width: fit-content;
+}
+
+.bg-accent {
+    background-color: var(--accent) !important;
 }
 
 .badge.bg-accent {
@@ -1443,8 +1546,24 @@ html:not([data-theme="light"]) footer {
     color: #475569 !important;
 }
 
-[data-theme="light"] .trophy-room-caption {
-    color: #0f172a !important;
+/* Trophy Room & Image Overlay Cards Text Color (Always High-Contrast White) */
+.trophy-room-caption,
+p.trophy-room-caption,
+.trophy-room-card p,
+.trophy-room-overlay p,
+.trophy-room-section .trophy-room-card p,
+.trophy-room-section .trophy-room-caption,
+[data-theme="light"] .trophy-room-caption,
+[data-theme="light"] p.trophy-room-caption,
+[data-theme="light"] .bg-card p.trophy-room-caption,
+[data-theme="light"] .bg-card .trophy-room-card p,
+[data-theme="light"] .bg-card .trophy-room-overlay p,
+[data-theme="light"] .trophy-room-section .trophy-room-caption,
+[data-theme="light"] .trophy-room-section .trophy-room-card .trophy-room-caption,
+[data-theme="light"] .trophy-room-section .trophy-room-card .trophy-room-overlay p {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.9) !important;
+    font-weight: 700 !important;
 }
 
 /* Footer email input and placeholder visibility in dark mode */
@@ -1452,6 +1571,32 @@ html:not([data-theme="light"]) footer input[type="email"].form-control,
 html:not([data-theme="light"]) footer input[type="email"].form-control::placeholder {
     color: #ffffff !important;
     opacity: 1 !important;
+}
+
+/* Footer newsletter input and button responsiveness */
+footer .glass-panel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+footer .glass-panel input[type="email"].form-control {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+}
+
+footer .glass-panel .btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+    footer .glass-panel .btn {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
 }
 
 /* Safety Protocols Card in book-now.html light mode */
@@ -1467,8 +1612,53 @@ html:not([data-theme="light"]) footer input[type="email"].form-control::placehol
     color: #475569 !important;
 }
 
-[data-theme="light"] .bg-tech .bg-dark .tech-glitch {
+/* Organizer Feature Cards & Hover Effects */
+.organizer-feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                box-shadow 0.35s ease, 
+                border-color 0.35s ease, 
+                background-color 0.35s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.organizer-feature-card .card-icon,
+.organizer-feature-card i {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.35s ease;
+    display: inline-block;
+}
+
+.organizer-feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 24px rgba(34, 197, 94, 0.25) !important;
+}
+
+.organizer-feature-card:hover .card-icon,
+.organizer-feature-card:hover i {
+    transform: scale(1.18) translateY(-2px);
+    color: #4ade80 !important;
+}
+
+[data-theme="light"] .organizer-feature-card {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .organizer-feature-card .text-white {
     color: #0f172a !important;
+}
+
+[data-theme="light"] .organizer-feature-card:hover {
+    background: #ffffff !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12), 0 0 20px rgba(34, 197, 94, 0.25) !important;
 }
 
 /* Standardize Corner Radius for All Buttons, Containers, and Inputs */
